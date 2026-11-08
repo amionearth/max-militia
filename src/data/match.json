@@ -1,0 +1,13 @@
+{
+  "_note": "Team deathmatch rules. Rooms can override killLimit/timeLimitMinutes within the allowed ranges from the lobby (host only).",
+  "teams": [
+    { "id": 0, "name": "RED", "color": "#ff3b5c" },
+    { "id": 1, "name": "BLUE", "color": "#3b8cff" }
+  ],
+  "defaults": { "killLimit": 15, "timeLimitMinutes": 6 },
+  "limits": { "killLimit": [5, 50], "timeLimitMinutes": [2, 15] },
+  "countdownSeconds": 3,
+  "resultsSeconds": 12,
+  "respawnProtectionSeconds": 1.5,
+  "lastDamagerCreditSeconds": 5
+}

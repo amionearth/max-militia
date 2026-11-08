@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#0a0618" />
+    <meta name="description" content="MAX MILITIA: a fast low-poly jetpack arena shooter. Fly, shoot and outgun the practice dummy on the Outpost map." />
+    <title>MAX MILITIA</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preload" href="./fonts/ManusCC0-Bold.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="./fonts/ManusCC0-Regular.ttf" as="font" type="font/ttf" crossorigin />
+  </head>
+  <body data-screen="boot">
+    <canvas id="game"></canvas>
+    <div id="ui"></div>
+    <div id="boot">
+      <div class="boot-card">
+        <img src="./favicon.svg" alt="" />
+        <h1>MAX MILITIA</h1>
+        <div class="track"><div id="boot-fill"></div></div>
+        <div id="boot-text">Loading…</div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

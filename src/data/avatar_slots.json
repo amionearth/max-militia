@@ -1,0 +1,84 @@
+{
+  "_note": "Cosmetic-only catalog. IDs come from assest/avatar_slots.json; labels/colors are the MAX MILITIA V2 initial set built from primitives. Only IDs are ever stored or sent over the network.",
+  "baseModel": "max_base_humanoid",
+  "rules": { "cosmeticOnly": true, "teamColorAuto": true, "storage": "localStorage", "networkSends": "ids_only" },
+  "slotOrder": ["skin", "head", "face", "torso", "legs", "boots", "jetpack_flame", "emote"],
+  "slots": {
+    "skin": {
+      "label": "Skin",
+      "options": [
+        { "id": "tone1", "label": "Pale", "color": "#d9cbc0" },
+        { "id": "tone2", "label": "Peach", "color": "#f1c9a5" },
+        { "id": "tone3", "label": "Sand", "color": "#d9a066" },
+        { "id": "tone4", "label": "Bronze", "color": "#a66e43" },
+        { "id": "tone5", "label": "Umber", "color": "#7a4a2b" },
+        { "id": "tone6", "label": "Deep", "color": "#4a2e1e" }
+      ]
+    },
+    "head": {
+      "label": "Headgear",
+      "options": [
+        { "id": "none", "label": "Bare" },
+        { "id": "cap", "label": "Team Cap" },
+        { "id": "helmet", "label": "Helmet", "color": "#4f5a8a" },
+        { "id": "bandana", "label": "Bandana" },
+        { "id": "goggles", "label": "Goggles", "color": "#22e6ff" }
+      ]
+    },
+    "face": {
+      "label": "Face",
+      "options": [
+        { "id": "none", "label": "Plain" },
+        { "id": "skull_mask", "label": "Skull Mask", "color": "#e8e8f4" },
+        { "id": "gas_mask", "label": "Gas Mask", "color": "#3d4462" },
+        { "id": "visor", "label": "Visor", "color": "#59f3ff" }
+      ]
+    },
+    "torso": {
+      "label": "Torso",
+      "options": [
+        { "id": "tee", "label": "Team Tee" },
+        { "id": "camo_vest", "label": "Camo Vest", "color": "#4c6b3c" },
+        { "id": "hoodie", "label": "Hoodie", "color": "#5b5f7a" },
+        { "id": "armor_plate", "label": "Armor Plate", "color": "#39405e" }
+      ]
+    },
+    "legs": {
+      "label": "Legs",
+      "options": [
+        { "id": "cargo", "label": "Cargo", "color": "#6f6a4a" },
+        { "id": "shorts", "label": "Shorts", "color": "#3b4a7a" },
+        { "id": "armored", "label": "Armored", "color": "#394060" }
+      ]
+    },
+    "boots": {
+      "label": "Boots",
+      "options": [
+        { "id": "standard", "label": "Standard", "color": "#14141c" },
+        { "id": "neon", "label": "Neon Soles", "color": "#22e6ff" },
+        { "id": "gold", "label": "Gold", "color": "#ffc83d" }
+      ]
+    },
+    "jetpack_flame": {
+      "label": "Jet Flame",
+      "options": [
+        { "id": "orange", "label": "Ember", "color": "#ff8a2a", "core": "#fff3b0" },
+        { "id": "blue", "label": "Ion", "color": "#3b8cff", "core": "#c8f6ff" },
+        { "id": "green", "label": "Toxin", "color": "#4dff7a", "core": "#eaffc8" },
+        { "id": "pink", "label": "Plasma", "color": "#ff2fb8", "core": "#ffd2f0" }
+      ]
+    },
+    "emote": {
+      "label": "Emote (V)",
+      "options": [
+        { "id": "none", "label": "None" },
+        { "id": "wave", "label": "Wave" },
+        { "id": "salute", "label": "Salute" }
+      ]
+    }
+  },
+  "defaults": {
+    "skin": "tone1", "head": "cap", "face": "visor", "torso": "tee", "legs": "cargo",
+    "boots": "standard", "jetpack_flame": "orange", "emote": "wave"
+  }
+}

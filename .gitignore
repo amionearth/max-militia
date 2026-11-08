@@ -1,0 +1,9 @@
+node_modules/
+dist/
+shots/
+/.manus-webdev/preview-identity.json
+
+# Stray Godot editor binaries supplied by the user (not part of the Three.js build)
+maxmilitia/
+.manus/mcp-results/
+shots/

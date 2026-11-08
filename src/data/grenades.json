@@ -1,0 +1,37 @@
+{
+  "_note": "PROPOSED MAX MILITIA grenade tuning. Exactly three types. Damage rules: enemies take full damage, the thrower takes selfDamageMult of it, teammates take none. Blast damage falls off linearly with distance and is blocked by solid geometry between the blast and the target's torso.",
+  "common": {
+    "throwSpeed": 17,
+    "throwUp": 3.5,
+    "inheritVelocity": 0.5,
+    "throwCooldown": 0.6,
+    "gravity": -24,
+    "radius": 0.16,
+    "bounce": 0.42,
+    "friction": 0.78,
+    "selfDamageMult": 0.5,
+    "spawnProtection": 1.5
+  },
+  "types": [
+    {
+      "id": "frag", "name": "FRAG", "key": "3",
+      "fuse": 2.5, "radius": 5, "damage": 90, "minDamage": 8,
+      "startCount": 2, "maxCount": 4, "rechargeSeconds": 22,
+      "color": "#ff7a1f"
+    },
+    {
+      "id": "gas", "name": "GAS", "key": "4",
+      "fuse": 3.2, "burstOnLanding": true, "landingDelay": 0.5,
+      "cloudRadius": 5.5, "cloudDuration": 6, "tickSeconds": 0.5, "damagePerTick": 6, "maxCloudHeight": 5,
+      "startCount": 1, "maxCount": 2, "rechargeSeconds": 35,
+      "color": "#7dff6a"
+    },
+    {
+      "id": "prox", "name": "PROXIMITY", "key": "5",
+      "armDelay": 1.4, "triggerRadius": 2.6, "blastDelay": 0.35, "maxLife": 25,
+      "radius": 4, "damage": 80, "minDamage": 10,
+      "startCount": 1, "maxCount": 2, "rechargeSeconds": 35,
+      "color": "#ff2fb8"
+    }
+  ]
+}

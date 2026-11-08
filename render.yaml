@@ -1,0 +1,20 @@
+# Deploys the MAX MILITIA multiplayer server (WebSocket) on Render. Vercel cannot host this part:
+# serverless functions cannot keep a WebSocket match loop running. Deploy the Vercel front end with
+# VITE_WS_URL=wss://<this service>.onrender.com and set ALLOWED_ORIGINS to your Vercel URL.
+services:
+  - type: web
+    name: max-militia-server
+    runtime: node
+    plan: free
+    buildCommand: corepack enable && pnpm install --frozen-lockfile
+    startCommand: pnpm start:server
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: ALLOWED_ORIGINS
+        sync: false # e.g. https://max-militia.vercel.app (comma separated)
+      - key: MAX_ROOMS
+        value: 20
+      - key: MAX_PLAYERS_PER_ROOM
+        value: 6

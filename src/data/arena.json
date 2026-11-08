@@ -1,0 +1,105 @@
+{
+  "_note": "SKYSPIRE: MAX MILITIA V2 arena. Original layout (not a copy of any Mini Militia map). A central spire with three decks rises from a small ground island; a low west dock and a high east perch hang off it on bridges; two ground-level barges are the team spawns; floating islets give jetpack stepping stones. Solids are axis-aligned boxes: pos is the box centre, size is [width x, height y, depth z]. y is up, kill plane at killY.",
+  "id": "skyspire",
+  "name": "SKYSPIRE",
+  "tagline": "Spire in the sky. Fight up, fall out.",
+  "bounds": { "x": 36, "z": 17, "ceiling": 44 },
+  "killY": -22,
+  "colors": { "cyan": "#22e6ff", "red": "#ff3b5c", "blue": "#3b8cff", "amber": "#ffb020", "purple": "#9a5bff", "pink": "#ff2fb8" },
+  "solids": [
+    { "id": "core_island", "kind": "ground", "pos": [0, -2, 0], "size": [18, 4, 18], "edge": "cyan" },
+    { "id": "core_under1", "kind": "rock", "pos": [0, -6.5, 0], "size": [11, 5, 11], "edge": "purple" },
+    { "id": "core_under2", "kind": "rock", "pos": [0, -11, 0], "size": [5, 4, 5], "edge": "purple" },
+    { "id": "stone_w", "kind": "islet", "pos": [-15, -1, 0], "size": [4, 2, 4], "edge": "cyan" },
+    { "id": "stone_e", "kind": "islet", "pos": [15.5, -1, 2], "size": [4, 2, 4], "edge": "cyan" },
+
+    { "id": "barge_w", "kind": "ground", "pos": [-27, -1.5, 0], "size": [12, 3, 16], "edge": "red" },
+    { "id": "barge_w_under", "kind": "rock", "pos": [-27, -5, 0], "size": [7, 4, 10], "edge": "purple" },
+    { "id": "barge_e", "kind": "ground", "pos": [27, -1.5, 0], "size": [12, 3, 16], "edge": "blue" },
+    { "id": "barge_e_under", "kind": "rock", "pos": [27, -5, 0], "size": [7, 4, 10], "edge": "purple" },
+
+    { "id": "spire_core", "kind": "tower", "pos": [0, 14, 0], "size": [3, 28, 3], "edge": "amber" },
+    { "id": "deck_low", "kind": "deck", "pos": [0, 7.75, 0], "size": [9, 0.5, 9], "edge": "cyan" },
+    { "id": "deck_mid", "kind": "deck", "pos": [0, 15.75, 0], "size": [9, 0.5, 9], "edge": "pink" },
+    { "id": "deck_high", "kind": "deck", "pos": [0, 23.75, 0], "size": [7, 0.5, 7], "edge": "cyan" },
+    { "id": "crown", "kind": "deck", "pos": [0, 28.25, 0], "size": [6, 0.5, 6], "edge": "amber" },
+
+    { "id": "dock_w", "kind": "deck", "pos": [-26, 6.5, 0], "size": [14, 3, 16], "edge": "red" },
+    { "id": "bridge_w", "kind": "bridge", "pos": [-11.75, 7.75, 0], "size": [14.5, 0.5, 3], "edge": "cyan" },
+    { "id": "dock_w_rail_out", "kind": "wall", "pos": [-32.75, 8.6, 0], "size": [0.5, 1.2, 16], "edge": "red" },
+    { "id": "dock_w_rail_n", "kind": "wall", "pos": [-19.25, 8.6, -5.25], "size": [0.5, 1.2, 5.5], "edge": "red" },
+    { "id": "dock_w_rail_s", "kind": "wall", "pos": [-19.25, 8.6, 5.25], "size": [0.5, 1.2, 5.5], "edge": "red" },
+    { "id": "dock_w_slab", "kind": "wall", "pos": [-27, 10.5, 0], "size": [0.6, 5, 5], "edge": "red" },
+
+    { "id": "perch_e", "kind": "deck", "pos": [24, 14.5, 0], "size": [12, 3, 14], "edge": "blue" },
+    { "id": "bridge_e", "kind": "bridge", "pos": [11.25, 15.75, 0], "size": [13.5, 0.5, 3], "edge": "pink" },
+    { "id": "perch_e_rail_out", "kind": "wall", "pos": [29.75, 16.6, 0], "size": [0.5, 1.2, 14], "edge": "blue" },
+    { "id": "perch_e_rail_n", "kind": "wall", "pos": [24, 16.6, -6.75], "size": [8, 1.2, 0.5], "edge": "blue" },
+    { "id": "perch_e_rail_s", "kind": "wall", "pos": [24, 16.6, 6.75], "size": [8, 1.2, 0.5], "edge": "blue" },
+    { "id": "perch_e_wall", "kind": "wall", "pos": [26, 17.2, 0], "size": [0.6, 2.4, 5], "edge": "blue" },
+
+    { "id": "isl_w1", "kind": "islet", "pos": [-14, 3.25, 8], "size": [5, 1.5, 5], "edge": "purple" },
+    { "id": "isl_w2", "kind": "islet", "pos": [-12, 11.25, -9], "size": [6, 1.5, 5], "edge": "purple" },
+    { "id": "isl_e1", "kind": "islet", "pos": [14, 4.25, -8], "size": [5, 1.5, 5], "edge": "purple" },
+    { "id": "isl_e2", "kind": "islet", "pos": [16, 10.25, 8], "size": [4, 1.5, 4], "edge": "purple" },
+    { "id": "isl_n_e", "kind": "islet", "pos": [14, 21.25, -3], "size": [5, 1.5, 5], "edge": "purple" },
+    { "id": "isl_n_w", "kind": "islet", "pos": [-15, 19.25, 4], "size": [5, 1.5, 5], "edge": "purple" },
+
+    { "id": "pylon_w", "kind": "tower", "pos": [-7, 2, 0], "size": [1, 4, 1], "edge": "amber" },
+    { "id": "pylon_e", "kind": "tower", "pos": [7, 2, 0], "size": [1, 4, 1], "edge": "amber" },
+    { "id": "crate_core_a", "kind": "crate", "pos": [-5.5, 0.8, 5.5], "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_core_b", "kind": "crate", "pos": [5.5, 0.8, -5.5], "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_core_c", "kind": "crate", "pos": [-5.5, 0.8, -5.8], "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_core_d", "kind": "crate", "pos": [6.3, 0.8, 5], "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_core_e", "kind": "crate", "pos": [6.3, 2.4, 5], "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_bw_a", "kind": "crate", "pos": [-30, 0.8, 5], "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_bw_b", "kind": "crate", "pos": [-24, 0.8, -5], "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_bw_c", "kind": "crate", "pos": [-30, 0.8, -5.5], "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_be_a", "kind": "crate", "pos": [30, 0.8, -5], "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_be_b", "kind": "crate", "pos": [24, 0.8, 4.5], "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_deck_low", "kind": "crate", "pos": [3, 8.8, -3], "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_deck_mid", "kind": "crate", "pos": [3, 16.8, -3], "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_deck_high", "kind": "crate", "pos": [-2.2, 24.8, -2.2], "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_dock", "kind": "crate", "pos": [-23, 8.8, -5], "size": [1.6, 1.6, 1.6], "edge": "amber" }
+  ],
+  "spawns": [
+    { "id": "red_1", "team": 0, "pos": [-28, 0, -2], "yaw": -1.5708 },
+    { "id": "red_2", "team": 0, "pos": [-24, 0, 2.5], "yaw": -1.5708 },
+    { "id": "red_3", "team": 0, "pos": [-31, 0, 1], "yaw": -1.5708 },
+    { "id": "blue_1", "team": 1, "pos": [28, 0, 2], "yaw": 1.5708 },
+    { "id": "blue_2", "team": 1, "pos": [24, 0, -1.5], "yaw": 1.5708 },
+    { "id": "blue_3", "team": 1, "pos": [31, 0, -1.5], "yaw": 1.5708 }
+  ],
+  "pickups": [
+    { "id": "pk_core_n", "pos": [0, 0.9, 7], "tier": "low" },
+    { "id": "pk_core_s", "pos": [-2, 0.9, -7.5], "tier": "low" },
+    { "id": "pk_barge_w", "pos": [-27, 0.9, -6.5], "tier": "low" },
+    { "id": "pk_barge_e", "pos": [27, 0.9, 6.5], "tier": "low" },
+    { "id": "pk_deck_low", "pos": [3.2, 8.9, 3.2], "tier": "mid" },
+    { "id": "pk_deck_mid", "pos": [-3.2, 16.9, 3.2], "tier": "mid" },
+    { "id": "pk_dock", "pos": [-24, 8.9, 5], "tier": "mid" },
+    { "id": "pk_deck_high", "pos": [2.5, 24.9, 2.5], "tier": "high" },
+    { "id": "pk_perch", "pos": [22, 16.9, -4], "tier": "high" },
+    { "id": "pk_isle_n", "pos": [14, 22.9, -3], "tier": "high" },
+    { "id": "pk_crown", "pos": [0, 29.4, 2], "tier": "high" }
+  ],
+  "dummies": [
+    { "id": "dummy_core", "pos": [4, 0, -2], "yaw": 1.5708, "hp": 120, "respawn": 4 },
+    { "id": "dummy_bridge", "pos": [11, 16, 0], "yaw": 1.5708, "hp": 120, "respawn": 4 }
+  ],
+  "decor": {
+    "rings": [
+      { "y": 8.6, "r": 6.4, "color": "cyan", "speed": 0.35 },
+      { "y": 16.6, "r": 6.4, "color": "pink", "speed": -0.3 },
+      { "y": 24.6, "r": 5.4, "color": "cyan", "speed": 0.4 }
+    ],
+    "beacon": { "pos": [0, 28.5, 0], "height": 70, "color": "pink" },
+    "banners": [
+      { "pos": [-33.4, 4, 0], "size": [0.2, 6, 3], "color": "red" },
+      { "pos": [33.4, 4, 0], "size": [0.2, 6, 3], "color": "blue" }
+    ],
+    "debris": { "count": 46, "minR": 44, "maxR": 90, "minY": -18, "maxY": 40 }
+  },
+  "camera": { "orbitRadius": 58, "orbitHeight": 17, "lookAt": [0, 10, 0] },
+  "shadow": { "halfWidth": 52, "halfHeight": 42, "far": 170 }
+}

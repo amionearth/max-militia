@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 2,
+  "title": "MAX MILITIA",
+  "description": "A fast low-poly neon jetpack arena shooter. Fly the Outpost, burn your fuel in bursts and light up the practice dummy with an Uzi or Desert Eagle.",
+  "defaultCaptions": {
+    "x": "MAX MILITIA: jetpack gunfights in a neon low-poly outpost. Play it in your browser.",
+    "facebook": "MAX MILITIA is a fan-made, browser-based jetpack arena shooter with a neon low-poly look. Jump in and try the Outpost practice range.",
+    "reddit": "MAX MILITIA - a fan-made 3D browser jetpack arena shooter (Milestone 1: Outpost arena, Uzi, Desert Eagle, practice dummy)",
+    "discord": "MAX MILITIA: neon jetpack arena shooter in your browser. Fan-made, not affiliated with Appsomniacs or Miniclip."
+  },
+  "assets": {
+    "favicon": "assets/share/favicon.png"
+  }
+}

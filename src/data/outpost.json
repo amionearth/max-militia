@@ -1,0 +1,60 @@
+{
+  "id": "outpost",
+  "name": "Outpost",
+  "_note": "Boxes are [centerX, centerY, centerZ] + [width, height, depth] in metres. Top surface = centerY + height/2. Left half uses red edges, right half blue.",
+  "bounds": { "x": 34, "z": 13, "ceiling": 36 },
+  "killY": -24,
+  "colors": {
+    "red": "#ff3b5c",
+    "blue": "#3b8cff",
+    "cyan": "#22e6ff",
+    "amber": "#ffb020"
+  },
+  "solids": [
+    { "id": "ground_left",  "kind": "ground", "pos": [-22, -13, 0],  "size": [24, 26, 26], "edge": "red" },
+    { "id": "ground_right", "kind": "ground", "pos": [22, -13, 0],   "size": [24, 26, 26], "edge": "blue" },
+    { "id": "pit_platform", "kind": "platform", "pos": [0, -6.25, 0], "size": [8, 0.5, 8],  "edge": "cyan" },
+
+    { "id": "tower_left_core",  "kind": "tower", "pos": [-24, 9, 0], "size": [4, 18, 4], "edge": "red" },
+    { "id": "tower_left_mid",   "kind": "deck",  "pos": [-24, 8.25, 0],  "size": [10, 0.5, 8],  "edge": "red" },
+    { "id": "tower_left_top",   "kind": "deck",  "pos": [-24, 18.25, 0], "size": [11, 0.5, 10], "edge": "red" },
+    { "id": "tower_right_core", "kind": "tower", "pos": [24, 9, 0], "size": [4, 18, 4], "edge": "blue" },
+    { "id": "tower_right_mid",  "kind": "deck",  "pos": [24, 8.25, 0],  "size": [10, 0.5, 8],  "edge": "blue" },
+    { "id": "tower_right_top",  "kind": "deck",  "pos": [24, 18.25, 0], "size": [11, 0.5, 10], "edge": "blue" },
+
+    { "id": "bridge_low",         "kind": "bridge", "pos": [0, 8.25, 0],      "size": [40, 0.5, 5],  "edge": "cyan" },
+    { "id": "bridge_high_left",   "kind": "bridge", "pos": [-10.75, 18.25, 0], "size": [15.5, 0.5, 4], "edge": "cyan" },
+    { "id": "bridge_high_right",  "kind": "bridge", "pos": [10.75, 18.25, 0],  "size": [15.5, 0.5, 4], "edge": "cyan" },
+
+    { "id": "ledge_left_low",   "kind": "ledge", "pos": [-31.75, 4.25, 0],  "size": [4.5, 0.5, 6], "edge": "red" },
+    { "id": "ledge_left_high",  "kind": "ledge", "pos": [-31.75, 13.25, 0], "size": [4.5, 0.5, 6], "edge": "red" },
+    { "id": "ledge_right_low",  "kind": "ledge", "pos": [31.75, 4.25, 0],   "size": [4.5, 0.5, 6], "edge": "blue" },
+    { "id": "ledge_right_high", "kind": "ledge", "pos": [31.75, 13.25, 0],  "size": [4.5, 0.5, 6], "edge": "blue" },
+    { "id": "pit_ledge_left",   "kind": "ledge", "pos": [-8.5, -2.75, 0],   "size": [3, 0.5, 6],   "edge": "cyan" },
+    { "id": "pit_ledge_right",  "kind": "ledge", "pos": [8.5, -2.75, 0],    "size": [3, 0.5, 6],   "edge": "cyan" },
+
+    { "id": "crate_l1", "kind": "crate", "pos": [-14, 0.8, 5],   "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_l2", "kind": "crate", "pos": [-14, 0.8, -5],  "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_l3", "kind": "crate", "pos": [-12.4, 0.8, 0], "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_l4", "kind": "crate", "pos": [-12.4, 2.4, 0], "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_r1", "kind": "crate", "pos": [14, 0.8, 5],    "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_r2", "kind": "crate", "pos": [14, 0.8, -5],   "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_r3", "kind": "crate", "pos": [12.4, 0.8, 0],  "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_r4", "kind": "crate", "pos": [12.4, 2.4, 0],  "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_b1", "kind": "crate", "pos": [-7, 9.3, 1],    "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_b2", "kind": "crate", "pos": [9, 9.3, -1],    "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_h1", "kind": "crate", "pos": [-12, 19.3, 1],  "size": [1.6, 1.6, 1.6], "edge": "amber" },
+    { "id": "crate_h2", "kind": "crate", "pos": [12, 19.3, -1],  "size": [1.6, 1.6, 1.6], "edge": "amber" }
+  ],
+  "spawns": [
+    { "pos": [-18, 0, 7],  "yaw": -1.5708 },
+    { "pos": [-18, 0, -7], "yaw": -1.5708 },
+    { "pos": [-30, 0, 8],  "yaw": -1.5708 },
+    { "pos": [18, 0, 7],   "yaw": 1.5708 },
+    { "pos": [18, 0, -7],  "yaw": 1.5708 },
+    { "pos": [30, 0, -8],  "yaw": 1.5708 }
+  ],
+  "dummies": [
+    { "id": "dummy_bridge", "pos": [4, 8.5, 0], "yaw": 1.5708, "hp": 100, "respawn": 3 }
+  ]
+}

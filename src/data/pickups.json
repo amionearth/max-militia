@@ -1,0 +1,14 @@
+{
+  "_note": "Server-owned random weapon pickups. Each spawn point (defined in the arena file) has a tier. When a point's timer expires the server picks a weapon from the pool whose tiers include that point's tier, using weights, and avoids repeating a weapon already lying on another point when an alternative exists. Clients never roll.",
+  "firstSpawnDelay": 4,
+  "respawnSeconds": 18,
+  "respawnJitter": 4,
+  "despawnSeconds": 40,
+  "pickupRadius": 1.3,
+  "pool": [
+    { "weapon": "ak47", "weight": 4, "tiers": ["low", "mid"] },
+    { "weapon": "shotgun", "weight": 3, "tiers": ["low", "mid"] },
+    { "weapon": "magnum", "weight": 3, "tiers": ["low", "mid", "high"] },
+    { "weapon": "sniper", "weight": 2, "tiers": ["mid", "high"] }
+  ]
+}
